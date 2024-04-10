@@ -1,0 +1,225 @@
+/* Contactus.css */
+
+.contactus {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 50%; */
+    /* margin: 0; 
+    */
+}
+
+.concontainer {
+    background-color: rgb(255, 255, 255);
+    padding: 5%; /* Adjust padding */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(167, 167, 167);
+    max-width: 600px;
+    width: 100%;
+    margin: 4% 2%; /* Adjust margin */
+    display: flex;
+    flex-direction: column;
+}
+
+.cencontent {
+    text-align: center;
+    column-count: 1; /* Adjust column count */
+    width: 100%;
+}
+
+.ccdiv {
+    padding: 2%;
+    box-sizing: border-box; /* Adjust box-sizing */
+}
+
+.form-group {
+    margin-bottom: 5%; /* Adjust margin */
+    position: relative;
+    flex-direction: column;
+}
+
+.conlabel {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2%; /* Adjust margin */
+    color: #555;
+}
+
+.coninput,
+.contextarea {
+    width: 100%; /* Adjust width */
+    padding: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.coninput:focus,
+.contextarea:focus {
+    outline: none;
+    background-color: #e0e0e0;
+}
+
+.conbutton {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 3% 5%; /* Adjust padding */
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.conbutton:hover {
+    background-color: #e74c4f;
+}
+
+.lpclogo.fixed-size {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.contactsvg {
+    width: 40%;
+}
+
+
+/* for text animation  */
+/* YourComponent.css */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+.conh1 {
+  text-align: center;
+  background: rgb(255, 255, 255);
+  color: #555;
+  
+  font-family: 'Roboto';
+  height: 100px;
+ 
+  font-size: 40px;
+  
+  
+}
+
+.condiv {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.condiv:first-of-type {
+  animation: showup 7s infinite;
+}
+
+.condiv:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+.condiv:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+
+.conp {
+  font-size: 12px;
+  color: #999;
+  margin-top: 200px;
+}
+
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .cencontent {
+        column-count: 1;
+    }
+
+    .concontainer {
+        margin: 4% 2%;
+    }
+    .contactsvg {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .concontainer {
+        padding: 3%;
+    }
+
+    .ccdiv {
+        padding: 3%;
+    }
+
+    .conbutton {
+        padding: 3% 5%;
+    }
+}
+@media (max-width:600px){
+    .contactsvg {
+        width: 0%;
+    }  
+    .concontainer {
+        margin: 4%;
+    }
+}

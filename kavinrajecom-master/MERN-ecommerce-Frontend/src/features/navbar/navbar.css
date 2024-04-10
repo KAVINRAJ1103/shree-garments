@@ -1,0 +1,16 @@
+.sg{
+  font-family: fantasy;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  letter-spacing: 10px;
+}
+.px{
+  color: rgb(255, 255, 255);
+  text-align: end;
+}
+.navi{
+  background: linear-gradient(to right, rgb(115, 75, 109,0.9), rgb(66, 39, 90, 0.9));
+}
+
+
